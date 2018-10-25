@@ -1,0 +1,130 @@
+\hypertarget{classProofLine}{}\section{Proof\+Line Class Reference}
+\label{classProofLine}\index{Proof\+Line@{Proof\+Line}}
+
+
+{\ttfamily \#include $<$Proof.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classProofLine_aed683fe67d959f3b95f8975e80b23d66}{Proof\+Line} ()
+\item 
+\mbox{\Hypertarget{classProofLine_a3513b1868553c12d6f543d2ac52128d0}\label{classProofLine_a3513b1868553c12d6f543d2ac52128d0}} 
+void {\bfseries print\+Proof\+Line} ()
+\item 
+\mbox{\Hypertarget{classProofLine_a0852f21558cab79bdcaec616afdb02c0}\label{classProofLine_a0852f21558cab79bdcaec616afdb02c0}} 
+void {\bfseries split\+Proof\+Line} (string proof\+\_\+line)
+\item 
+\mbox{\Hypertarget{classProofLine_a6f98427e3d814f8d122e729a427afeee}\label{classProofLine_a6f98427e3d814f8d122e729a427afeee}} 
+bool {\bfseries verify} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classProofLine_a7e1c27891418bad97d7e0ead18438973}\label{classProofLine_a7e1c27891418bad97d7e0ead18438973}} 
+string {\bfseries exp}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classProofLine_a43b9c81f4f9be5f00343f5145110e075}{and\+Elimination1} ()
+\item 
+bool \hyperlink{classProofLine_a0bda4d97d283bf87f0c97415ede20e37}{and\+Elimination2} ()
+\item 
+bool \hyperlink{classProofLine_ae5ea0ef5e9c41064af3d8578af1f8da0}{impl\+Elimination} ()
+\item 
+bool \hyperlink{classProofLine_aec5ed54b54b88fb6e1a28dc81e95c670}{or\+Intro1} ()
+\item 
+bool \hyperlink{classProofLine_af445475b7ba7083bc67b3066dbfefc95}{or\+Intro2} ()
+\item 
+bool \hyperlink{classProofLine_abbc92e738aea8f3aa60a2b252ebfb9c6}{MT} ()
+\item 
+bool \hyperlink{classProofLine_ac6f66fe3b8cc3d99b120c6cfc74f34b4}{and\+Intro} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classProofLine_a45395cbc2a93d336cfd867b343bc27a7}{operation}
+\item 
+\mbox{\Hypertarget{classProofLine_a398ea46def0f627b9eadd1564f9c873d}\label{classProofLine_a398ea46def0f627b9eadd1564f9c873d}} 
+int {\bfseries line\+\_\+no\+\_\+2}
+\item 
+int \hyperlink{classProofLine_a7bf8a305e7ad620013a2ebb0388e2531}{line\+\_\+no\+\_\+1}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Object of this class define a single line of proof. It contains details about sequent, operation ($^\wedge$i, $^\wedge$e, Vi etc) and the refrence line numbers. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classProofLine_aed683fe67d959f3b95f8975e80b23d66}\label{classProofLine_aed683fe67d959f3b95f8975e80b23d66}} 
+\index{Proof\+Line@{Proof\+Line}!Proof\+Line@{Proof\+Line}}
+\index{Proof\+Line@{Proof\+Line}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{Proof\+Line()}{ProofLine()}}
+{\footnotesize\ttfamily Proof\+Line\+::\+Proof\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Zero Parameter Constructor for \hyperlink{classProofLine}{Proof\+Line} Class. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classProofLine_a43b9c81f4f9be5f00343f5145110e075}\label{classProofLine_a43b9c81f4f9be5f00343f5145110e075}} 
+\index{Proof\+Line@{Proof\+Line}!and\+Elimination1@{and\+Elimination1}}
+\index{and\+Elimination1@{and\+Elimination1}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{and\+Elimination1()}{andElimination1()}}
+{\footnotesize\ttfamily bool Proof\+Line\+::and\+Elimination1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Function to verify A\+ND Elimination 1 \mbox{\Hypertarget{classProofLine_a0bda4d97d283bf87f0c97415ede20e37}\label{classProofLine_a0bda4d97d283bf87f0c97415ede20e37}} 
+\index{Proof\+Line@{Proof\+Line}!and\+Elimination2@{and\+Elimination2}}
+\index{and\+Elimination2@{and\+Elimination2}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{and\+Elimination2()}{andElimination2()}}
+{\footnotesize\ttfamily bool Proof\+Line\+::and\+Elimination2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Function to verify A\+ND Elimination 2 \mbox{\Hypertarget{classProofLine_ac6f66fe3b8cc3d99b120c6cfc74f34b4}\label{classProofLine_ac6f66fe3b8cc3d99b120c6cfc74f34b4}} 
+\index{Proof\+Line@{Proof\+Line}!and\+Intro@{and\+Intro}}
+\index{and\+Intro@{and\+Intro}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{and\+Intro()}{andIntro()}}
+{\footnotesize\ttfamily bool Proof\+Line\+::and\+Intro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Function to verify A\+ND Introduction \mbox{\Hypertarget{classProofLine_ae5ea0ef5e9c41064af3d8578af1f8da0}\label{classProofLine_ae5ea0ef5e9c41064af3d8578af1f8da0}} 
+\index{Proof\+Line@{Proof\+Line}!impl\+Elimination@{impl\+Elimination}}
+\index{impl\+Elimination@{impl\+Elimination}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{impl\+Elimination()}{implElimination()}}
+{\footnotesize\ttfamily bool Proof\+Line\+::impl\+Elimination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Function to verify Implication Elimination \mbox{\Hypertarget{classProofLine_abbc92e738aea8f3aa60a2b252ebfb9c6}\label{classProofLine_abbc92e738aea8f3aa60a2b252ebfb9c6}} 
+\index{Proof\+Line@{Proof\+Line}!MT@{MT}}
+\index{MT@{MT}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{M\+T()}{MT()}}
+{\footnotesize\ttfamily bool Proof\+Line\+::\+MT (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Function to verify Modus Tollens \mbox{\Hypertarget{classProofLine_aec5ed54b54b88fb6e1a28dc81e95c670}\label{classProofLine_aec5ed54b54b88fb6e1a28dc81e95c670}} 
+\index{Proof\+Line@{Proof\+Line}!or\+Intro1@{or\+Intro1}}
+\index{or\+Intro1@{or\+Intro1}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{or\+Intro1()}{orIntro1()}}
+{\footnotesize\ttfamily bool Proof\+Line\+::or\+Intro1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Function to verify OR Introduction 1 \mbox{\Hypertarget{classProofLine_af445475b7ba7083bc67b3066dbfefc95}\label{classProofLine_af445475b7ba7083bc67b3066dbfefc95}} 
+\index{Proof\+Line@{Proof\+Line}!or\+Intro2@{or\+Intro2}}
+\index{or\+Intro2@{or\+Intro2}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{or\+Intro2()}{orIntro2()}}
+{\footnotesize\ttfamily bool Proof\+Line\+::or\+Intro2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Function to verify OR Introduction 2 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classProofLine_a7bf8a305e7ad620013a2ebb0388e2531}\label{classProofLine_a7bf8a305e7ad620013a2ebb0388e2531}} 
+\index{Proof\+Line@{Proof\+Line}!line\+\_\+no\+\_\+1@{line\+\_\+no\+\_\+1}}
+\index{line\+\_\+no\+\_\+1@{line\+\_\+no\+\_\+1}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{line\+\_\+no\+\_\+1}{line\_no\_1}}
+{\footnotesize\ttfamily int Proof\+Line\+::line\+\_\+no\+\_\+1\hspace{0.3cm}{\ttfamily [protected]}}
+
+integers to store line number referred for the operation \mbox{\Hypertarget{classProofLine_a45395cbc2a93d336cfd867b343bc27a7}\label{classProofLine_a45395cbc2a93d336cfd867b343bc27a7}} 
+\index{Proof\+Line@{Proof\+Line}!operation@{operation}}
+\index{operation@{operation}!Proof\+Line@{Proof\+Line}}
+\subsubsection{\texorpdfstring{operation}{operation}}
+{\footnotesize\ttfamily string Proof\+Line\+::operation\hspace{0.3cm}{\ttfamily [protected]}}
+
+String to store operation performed. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Question\+\_\+2/Proof.\+h\end{DoxyCompactItemize}

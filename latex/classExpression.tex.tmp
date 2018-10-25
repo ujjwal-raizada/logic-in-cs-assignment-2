@@ -1,0 +1,112 @@
+\hypertarget{classExpression}{}\section{Expression Class Reference}
+\label{classExpression}\index{Expression@{Expression}}
+
+
+{\ttfamily \#include $<$Expression.\+h$>$}
+
+
+
+Collaboration diagram for Expression\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classExpression_a3817b91bd11af1d38674a51c1c057cd2}{create\+Parse\+Tree} ()
+\item 
+void \hyperlink{classExpression_a74bc172507d113a7a7fb4c8219be1559}{post\+Fix} ()
+\item 
+void \hyperlink{classExpression_a967a0757299897fbc0e2dd0a4fcb0325}{set\+Postfix} (string exp)
+\item 
+void \hyperlink{classExpression_a24e7a26a19f7caca2f6ededc601c0137}{set\+Infix} (string exp)
+\item 
+void \hyperlink{classExpression_a882ce32ef75bcd7840bc1439be89726d}{print\+In\+Order} ()
+\item 
+void \hyperlink{classExpression_a6891c65b2b853cd292d3ee6c156c360f}{verify\+Well\+Formed} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classExpression_ab9aa0a23f3ba69fe64c3e7c4a0f53f66}{infix\+\_\+output}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classExpression_af7a3eb9bb5e2255c4a94b94c208e18a3}\label{classExpression_af7a3eb9bb5e2255c4a94b94c208e18a3}} 
+\hyperlink{structnode}{node} $\ast$ {\bfseries new\+Node} (char value)
+\item 
+\mbox{\Hypertarget{classExpression_a9323f3705afb5744bf03acc697a2821c}\label{classExpression_a9323f3705afb5744bf03acc697a2821c}} 
+void {\bfseries in\+Order} (\hyperlink{structnode}{node} $\ast$root)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classExpression_a83feec7a7eb56f777fcbaf75967a450d}\label{classExpression_a83feec7a7eb56f777fcbaf75967a450d}} 
+string {\bfseries postfix\+\_\+exp}
+\item 
+\mbox{\Hypertarget{classExpression_a7f8a7414dde0a80f065becd4378fc07f}\label{classExpression_a7f8a7414dde0a80f065becd4378fc07f}} 
+string {\bfseries infix\+\_\+exp}
+\item 
+\hyperlink{structnode}{node} $\ast$ \hyperlink{classExpression_abbe5a2e06fcd02cf131b928c46d69716}{parse\+\_\+tree}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classExpression}{Expression} class holds postfix expression, and provides methods for taking input, creating parse tree and printing in-\/order transversal 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classExpression_a3817b91bd11af1d38674a51c1c057cd2}\label{classExpression_a3817b91bd11af1d38674a51c1c057cd2}} 
+\index{Expression@{Expression}!create\+Parse\+Tree@{create\+Parse\+Tree}}
+\index{create\+Parse\+Tree@{create\+Parse\+Tree}!Expression@{Expression}}
+\subsubsection{\texorpdfstring{create\+Parse\+Tree()}{createParseTree()}}
+{\footnotesize\ttfamily void Expression\+::create\+Parse\+Tree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method is used to create a parse tree from the given postfix \mbox{\Hypertarget{classExpression_a74bc172507d113a7a7fb4c8219be1559}\label{classExpression_a74bc172507d113a7a7fb4c8219be1559}} 
+\index{Expression@{Expression}!post\+Fix@{post\+Fix}}
+\index{post\+Fix@{post\+Fix}!Expression@{Expression}}
+\subsubsection{\texorpdfstring{post\+Fix()}{postFix()}}
+{\footnotesize\ttfamily void Expression\+::post\+Fix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method convert infix notation to postfix notation. \mbox{\Hypertarget{classExpression_a882ce32ef75bcd7840bc1439be89726d}\label{classExpression_a882ce32ef75bcd7840bc1439be89726d}} 
+\index{Expression@{Expression}!print\+In\+Order@{print\+In\+Order}}
+\index{print\+In\+Order@{print\+In\+Order}!Expression@{Expression}}
+\subsubsection{\texorpdfstring{print\+In\+Order()}{printInOrder()}}
+{\footnotesize\ttfamily void Expression\+::print\+In\+Order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This method is used to print the inorder of the parse tree. \mbox{\Hypertarget{classExpression_a24e7a26a19f7caca2f6ededc601c0137}\label{classExpression_a24e7a26a19f7caca2f6ededc601c0137}} 
+\index{Expression@{Expression}!set\+Infix@{set\+Infix}}
+\index{set\+Infix@{set\+Infix}!Expression@{Expression}}
+\subsubsection{\texorpdfstring{set\+Infix()}{setInfix()}}
+{\footnotesize\ttfamily void Expression\+::set\+Infix (\begin{DoxyParamCaption}\item[{string}]{exp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This setter method is used for setting the value for infix string \mbox{\Hypertarget{classExpression_a967a0757299897fbc0e2dd0a4fcb0325}\label{classExpression_a967a0757299897fbc0e2dd0a4fcb0325}} 
+\index{Expression@{Expression}!set\+Postfix@{set\+Postfix}}
+\index{set\+Postfix@{set\+Postfix}!Expression@{Expression}}
+\subsubsection{\texorpdfstring{set\+Postfix()}{setPostfix()}}
+{\footnotesize\ttfamily void Expression\+::set\+Postfix (\begin{DoxyParamCaption}\item[{string}]{exp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This setter method is used for setting the value for postfix string \mbox{\Hypertarget{classExpression_a6891c65b2b853cd292d3ee6c156c360f}\label{classExpression_a6891c65b2b853cd292d3ee6c156c360f}} 
+\index{Expression@{Expression}!verify\+Well\+Formed@{verify\+Well\+Formed}}
+\index{verify\+Well\+Formed@{verify\+Well\+Formed}!Expression@{Expression}}
+\subsubsection{\texorpdfstring{verify\+Well\+Formed()}{verifyWellFormed()}}
+{\footnotesize\ttfamily void Expression\+::verify\+Well\+Formed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This Method verify if the inputted infix is well formed or not 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classExpression_ab9aa0a23f3ba69fe64c3e7c4a0f53f66}\label{classExpression_ab9aa0a23f3ba69fe64c3e7c4a0f53f66}} 
+\index{Expression@{Expression}!infix\+\_\+output@{infix\+\_\+output}}
+\index{infix\+\_\+output@{infix\+\_\+output}!Expression@{Expression}}
+\subsubsection{\texorpdfstring{infix\+\_\+output}{infix\_output}}
+{\footnotesize\ttfamily string Expression\+::infix\+\_\+output}
+
+Infix notation generated by in\+Order Transversal \mbox{\Hypertarget{classExpression_abbe5a2e06fcd02cf131b928c46d69716}\label{classExpression_abbe5a2e06fcd02cf131b928c46d69716}} 
+\index{Expression@{Expression}!parse\+\_\+tree@{parse\+\_\+tree}}
+\index{parse\+\_\+tree@{parse\+\_\+tree}!Expression@{Expression}}
+\subsubsection{\texorpdfstring{parse\+\_\+tree}{parse\_tree}}
+{\footnotesize\ttfamily \hyperlink{structnode}{node}$\ast$ Expression\+::parse\+\_\+tree\hspace{0.3cm}{\ttfamily [protected]}}
+
+It is a pointer to root of the parse\+\_\+tree 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Question\+\_\+1/Expression.\+h\end{DoxyCompactItemize}
