@@ -83,25 +83,25 @@ class ProofLine {
         return false;
 
       if(operation == "^i")
-        return AndIntro();
+        return andIntro();
 
   	  if(operation == "^e1")
-        return AndElimination1();
+        return andElimination1();
 
       if(operation == "^e2")
-        return AndElimination2();
+        return andElimination2();
 
       if(operation == "P")
         return true;
 
       if(operation == "Vi1")
-        return OrIntro1();
+        return orIntro1();
 
       if(operation == "Vi2")
-        return OrIntro2();
+        return orIntro2();
 
       if(operation == ">e")
-        return ImplElimination();
+        return implElimination();
 
       if(operation == "MT")
         return MT();
